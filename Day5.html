@@ -1,0 +1,41 @@
+
+	Creating a complete superhero app
+ -->
+
+
+ <table>
+ 	<head>
+ 		<style>
+ 			
+
+
+ 		</style>
+ 	</head>
+ 	<body>
+ 		<div clas="data">
+ 			<h1>Superheroes</h1>
+
+ 		<div class="form">
+ 			<form onsubmit="addSuperhero(event)">
+ 				<!-- event object should be passed whenever a submit button -->
+	 			<input type="text" required placeholder="Name" id="name">
+	 			<input type="text" required placeholder="Age" id="name">
+	 			<input type="text" required placeholder="Planet" id="name">
+	 			<input type="text" required placeholder="Height" id="name">
+	 			<button type="submit" onclick="addSuperhero()">Add Superhero</button>
+ 			</form> 				
+ 		</div>
+
+ 		<div class="form">
+ 			<input type="text" placeholder"Start searching here" onkeyup="searchByName()">
+ 		</div>
+ </table>
+
+
+ <!-- 
+Note:
+“required” keyword in <input> tag works only when you have a submit button.
+If submit button is used, it refreshes the page & the form data entered will be lost. But, submit button has to be used in order to update the form.
+
+In order to overcome this issue, 'preventDefault' should be used.
+  
